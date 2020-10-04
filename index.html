@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortnite hype info</title>
+  <link rel="stylesheet" href="/dist/style.css">
+</head>
+
+<body>
+  <script src="/dist/app.js"></script>
+
+  <select id="season">
+    <option value="Hype_S14">Season 14</option>
+    <option value="Hype_S13">Season 13</option>
+    <option value="Hype_S12">Season 12</option>
+    <option value="Hype_S11">Season 11</option>
+    <option value="Hype_S10">Season 10</option>
+  </select>
+
+  <div class="leaderboard"></div>
+  <div class="loading">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <template id="row">
+    <div class="row">
+      <div class="row__header" data-for="player-:index">
+        <div class="row__rank row__header-entry">:rank</div>
+        <div class="row__name row__header-entry">:name</div>
+        <div class="row__hype row__header-entry">:hype</div>
+      </div>
+
+      <div class="row__content-wrapper" id="player-:index">
+        <div class="row__content">
+
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="stat">
+    <div class="row__matches row__info">
+      <div class="row__info-title">:name</div>
+      <div class="row__info-value">:value</div>
+    </div>
+  </template>
+</body>
+
+</html>

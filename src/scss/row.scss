@@ -1,0 +1,41 @@
+.row {
+  &__header {
+    display: flex;
+
+    &-entry {
+      background-color: #f3f8f9;
+      margin-bottom: 5px;
+      margin-right: 5px;
+      padding: 5px;
+    }
+  }
+
+  &__name {
+    flex-basis: 80%;
+  }
+
+  &__hype {
+    flex-basis: 10%;
+    text-align: center;
+  }
+
+  &__rank {
+    flex-basis: 10%;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+
+    &-wrapper {
+      display: none;
+    }
+  }
+
+  &__info {
+    margin-right: 50px;
+    margin-bottom: 10px;
+  }
+}
